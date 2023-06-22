@@ -1,0 +1,44 @@
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+content-type: application/json
+
+{
+    "description":"YOYOYO",
+    "specialist":"MD.HOUSE",
+    "date":"2002-10-10",
+    "healthCheckRating":2,
+    "type":"Hospital",
+    "discharge":{"date":"2001-10-10","criteria":"vayvay"},
+     "diagnosisCodes":["312","21"]
+}
+
+###
+
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+content-type: application/json
+
+{
+    "date": "2019-08-05",
+    "type": "OccupationalHealthcare",
+    "specialist": "MD House",
+    "employerName": "HyPD",
+    "diagnosisCodes": ["Z57.1", "Z74.3", "M51.2"],
+    "description":
+        "Patient mistakenly found himself in a nuclear plant waste site without protection gear. Very minor radiation poisoning. ",
+    "sickLeave": {
+        "startDate": "2019-08-05",
+        "endDate": "2019-08-28"
+    }
+}
+
+###
+
+POST http://localhost:3001/api/patients/d2773336-f723-11e9-8f0b-362b9e155667/entries
+content-type: application/json
+
+{
+"date": "2019-05-01",
+"specialist": "Dr Byte House",
+"type": "HealthCheck",
+"description": "Digital overdose, very bytestatic. Otherwise healthy.",
+"healthCheckRating": 0
+}
